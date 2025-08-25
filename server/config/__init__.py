@@ -1,3 +1,3 @@
-from .settings import PROJECT_ROOT
+from .settings import PROJECT_ROOT, ASSISTANT_BEHAVIOR
 
-__all__ = ["PROJECT_ROOT"]
+__all__ = ["PROJECT_ROOT", "ASSISTANT_BEHAVIOR"]
