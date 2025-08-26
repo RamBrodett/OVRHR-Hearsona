@@ -158,7 +158,7 @@ class HearsonaService:
         """Changes the user"""
         session_id = dt.now().strftime("%Y%m%d_%H%M%S")
         self.export_chat(session_id)
-        self.restart_session()
+        self._new_session()
 
     def cleanup(self):
         """Cleans up resources"""
