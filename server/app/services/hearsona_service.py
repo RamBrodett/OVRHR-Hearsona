@@ -153,6 +153,8 @@ class HearsonaService:
         except Exception as e:
             print(f"[Export ERROR] Failed to export chat: {e}")
             return False
+        
+        return True
 
     def change_user(self):
         """Changes the user"""
