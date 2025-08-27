@@ -9,7 +9,7 @@ import ast
 from datetime import datetime  as dt
 from typing import Optional, Tuple
 from infrastructure.models.model_loader import ModelLoader
-from config.settings import AssistantBehavior, PROJECT_ROOT
+from config.settings import ASSISTANT_BEHAVIOR, PROJECT_ROOT
 
 class HearsonaService:
     """Main Hearsona service - handles audio processing and model inference"""
@@ -44,7 +44,7 @@ class HearsonaService:
 
         full_prompt = f"{user_input} with the following attributes: {attr_str}" if attr_str else user_input
 
-        prompt = AssistantBehavior.strip() + "\n\n"
+        prompt = ASSISTANT_BEHAVIOR.strip() + "\n\n"
         prompt += f"User: {full_prompt}\nAssisstant:"
 
         response = self.mistral_inst_7B_Q(
