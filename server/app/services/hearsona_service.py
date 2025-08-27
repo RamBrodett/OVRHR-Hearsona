@@ -126,7 +126,7 @@ class HearsonaService:
         """Restarts the context for the same user"""
         self.start_over_flag = True
         self.parent_history.extend(self.history.copy())
-        self.startOverHistory.append({"user": "Invoked(Start Over)", "assistant": "(Start_over Mechanism Implemented)"})
+        self.parent_history.append({"user": "Invoked(Start Over)", "assistant": "(Start_over Mechanism Implemented)"})
         self.history = []
 
     def _new_session(self):
