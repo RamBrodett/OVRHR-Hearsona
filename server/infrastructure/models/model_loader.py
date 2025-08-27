@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from llama_cpp import Llama
 from diffusers import AudioLDM2Pipeline, DPMSolverMultistepScheduler
-from server.config import PROJECT_ROOT
+from config.settings import PROJECT_ROOT
 
 class ModelLoader:
     """Simple utility class for loading pre-trained models."""
