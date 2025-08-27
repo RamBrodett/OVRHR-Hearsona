@@ -19,7 +19,7 @@ class ModelLoader:
 
         return Llama(
             model_path=str(model_path),
-            n_ctx=16384,
+            n_ctx=12288,
             n_gpu_layers=32,
             n_threads=n_threads,
             verbose=False,
